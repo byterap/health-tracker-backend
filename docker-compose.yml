@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGODB_URI=你的MongoDB连接字符串
+      - PORT=5000
+    restart: always 
